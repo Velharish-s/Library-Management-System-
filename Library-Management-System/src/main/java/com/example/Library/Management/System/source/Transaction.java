@@ -19,7 +19,7 @@ public class Transaction {
     private Member member;
     private Date issueDate;
     private Date returnDate;
-    private boolean returned;
+    private boolean returned=false;
     public Transaction(){}
     public Transaction(Long id, Book book, Member member, Date issueDate, Date returnDate, boolean returned) {
         this.id = id;

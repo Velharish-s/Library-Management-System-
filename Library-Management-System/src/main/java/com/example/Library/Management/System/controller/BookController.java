@@ -3,11 +3,12 @@ package com.example.Library.Management.System.controller;
 import com.example.Library.Management.System.service.BookService;
 import com.example.Library.Management.System.source.Book;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
-@RestController("/api")
+@RestController
+@RequestMapping("/api")
 public class BookController {
     @Autowired
     BookService serve;
